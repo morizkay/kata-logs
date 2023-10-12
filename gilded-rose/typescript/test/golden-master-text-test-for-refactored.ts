@@ -1,4 +1,4 @@
-import { Item, GildedRose } from '../app/gilded-rose';
+import { Item, RefactoredGildedRose } from '../app/refactored-gilded-rose';
 
 const items = [
   new Item("+5 Dexterity Vest", 5, 20),
@@ -13,7 +13,7 @@ const items = [
   new Item("Conjured Mana Cake", 5, 10)
 ];
 
-const gildedRose = new GildedRose(items);
+const gildedRose = new RefactoredGildedRose(items);
 
 let days: number = 10;
 if (process.argv.length > 2) {
